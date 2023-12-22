@@ -1449,7 +1449,7 @@ namespace Concentus.Structs
         /// Encodes an Opus frame.
         /// </summary>
         /// <param name="in_pcm">Input signal (Interleaved if stereo). Length should be at least frame_size * channels</param>
-        /// <param name="frame_size">The number of samples per channel in the inpus signal.
+        /// <param name="frame_size">The number of samples per channel in the input signal.
         /// The frame size must be a valid Opus framesize for the given sample rate.
         /// For example, at 48Khz the permitted values are 120, 240, 480, 960, 1920, and 2880. Passing in a duration of less than 10ms
         /// (480 samples at 48Khz) will prevent the encoder from using FEC, DTX, or hybrid modes.</param>
